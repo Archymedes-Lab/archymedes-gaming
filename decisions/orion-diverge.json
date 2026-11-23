@@ -1,0 +1,223 @@
+{
+ "runAt": "2026-10-25T22:20:28.807Z",
+ "factors": [
+  {
+   "id": "adopt",
+   "label": "Studios adopt it within 12 months",
+   "weight": 0.2
+  },
+  {
+   "id": "reliable",
+   "label": "Makes NPCs measurably more reliable",
+   "weight": 0.16
+  },
+  {
+   "id": "moat",
+   "label": "Hard for Inworld/Convai/ACE to copy",
+   "weight": 0.16
+  },
+  {
+   "id": "player",
+   "label": "Players notice and value it",
+   "weight": 0.14
+  },
+  {
+   "id": "dropin",
+   "label": "Drops into existing NPC systems",
+   "weight": 0.12
+  },
+  {
+   "id": "build",
+   "label": "Small team can prototype it in weeks",
+   "weight": 0.12
+  },
+  {
+   "id": "cheap",
+   "label": "Low runtime cost and latency",
+   "weight": 0.1
+  }
+ ],
+ "options": [
+  {
+   "id": "hearsay",
+   "label": "Epistemic NPCs: rumours spread with provenance chains and trust; hearsay never justifies irreversible acts"
+  },
+  {
+   "id": "irrev",
+   "label": "Evidence thresholds scale with action irreversibility; uncertain NPCs probe (ask, check) before acting"
+  },
+  {
+   "id": "diff",
+   "label": "Behaviour diffs: replay recorded sessions against a changed config/model and show which decisions changed and why"
+  },
+  {
+   "id": "pcc",
+   "label": "Proof-carrying actions: any third-party AI runtime submits actions with a certificate the engine checks cheaply"
+  },
+  {
+   "id": "promises",
+   "label": "Commitments as contracts: NPC and player promises tracked as obligations verified against engine state"
+  },
+  {
+   "id": "consensus",
+   "label": "World-consistent cast: no two NPCs ever assert contradictory facts about authoritative state"
+  }
+ ],
+ "runs": [
+  {
+   "ask": "DECISION: What is the next real innovation for this layer: a new mechanism (not a feature) that no competitor implements, that makes AI NPCs feel alive while staying safe to ship?",
+   "judge": "typesafe",
+   "divergeFailed": false,
+   "paths": [
+    {
+     "id": "path_1",
+     "label": "Implement runtime narrative causality graph",
+     "description": "Build a live graph where NPC actions must satisfy causal preconditions from recent events, not just static facts. This forces logical continuity that memory-onl",
+     "niche": "direct",
+     "check": "Simulate 100 random event sequences; verify zero logical contradictions in NPC responses within 50ms latency."
+    },
+    {
+     "id": "path_2",
+     "label": "Partner with one indie studio for closed beta",
+     "description": "Embed with a small studio to co-design the reliability layer against their specific gameplay loops. Their feedback validates the mechanism before scaling.",
+     "niche": "borrow",
+     "check": "Secure a signed LOI from one studio willing to integrate the layer for 4 weeks in exchange for free access."
+    },
+    {
+     "id": "path_3",
+     "label": "Release open-source invariant test suite",
+     "description": "Publish the property-based invariant tests as a standalone tool. Studios adopt the tests first, creating demand for the middleware that passes them.",
+     "niche": "staged",
+     "check": "Publish the test suite on GitHub; measure if 3+ external studios fork or reference it within 14 days."
+    }
+   ],
+   "commit": "current",
+   "innovation": "path_2",
+   "portfolio": {
+    "current": 0.365617998792083,
+    "path_1": 0.14396496819735619,
+    "path_2": 0.2943135886765709,
+    "path_3": 0.19610344433398919
+   },
+   "stats": [
+    {
+     "id": "current",
+     "status": "clear",
+     "mean": 0.52,
+     "novelty": 0.21,
+     "niche": "direct",
+     "pBest": 0.37,
+     "ei": 0,
+     "checks": []
+    },
+    {
+     "id": "path_1",
+     "status": "clear",
+     "mean": 0.455,
+     "novelty": 0.67,
+     "niche": "direct",
+     "pBest": 0.14,
+     "ei": 0.034,
+     "checks": []
+    },
+    {
+     "id": "path_2",
+     "status": "clear",
+     "mean": 0.512,
+     "novelty": 0.62,
+     "niche": "staged",
+     "pBest": 0.29,
+     "ei": 0.056,
+     "checks": []
+    },
+    {
+     "id": "path_3",
+     "status": "clear",
+     "mean": 0.479,
+     "novelty": 0.66,
+     "niche": "reorder",
+     "pBest": 0.2,
+     "ei": 0.042,
+     "checks": []
+    }
+   ]
+  },
+  {
+   "ask": "DECISION: What unconventional capability would make studios and players say 'NPCs have never done this before', built on the reliability guarantees already in place?",
+   "judge": "typesafe",
+   "divergeFailed": false,
+   "paths": [
+    {
+     "id": "path_1",
+     "label": "Ship a public 'Hallucination Audit' API for studios",
+     "description": "Expose a read-only endpoint that logs every NPC action with its evidence chain. Studios can query why an NPC acted, proving reliability to players and QA teams",
+     "niche": "direct",
+     "check": "Build a mock endpoint returning 3 sample evidence chains; verify a studio QA lead can trace a specific NPC action to an engine event in unde"
+    },
+    {
+     "id": "path_2",
+     "label": "Integrate with existing game telemetry pipelines",
+     "description": "Instead of a new middleware, hook into standard Unity/Unreal analytics. Use existing event streams to validate NPC actions against real-time player data, reduci",
+     "niche": "borrow",
+     "check": "Write a prototype that ingests a standard Unity analytics JSON log; verify it can flag one inconsistent NPC action within 100ms of the log e"
+    },
+    {
+     "id": "path_3",
+     "label": "Create a 'Reliability Score' leaderboard for game mods",
+     "description": "Allow modders to publish their NPC behaviors with a public reliability score generated by the layer. Gamify trust: mods with 100% evidence resolution rank highe",
+     "niche": "reframe",
+     "check": "Simulate a leaderboard with 5 fake mods; verify that a community manager agrees the ranking metric is intuitive and that the scoring logic i"
+    }
+   ],
+   "commit": "path_1",
+   "innovation": "path_2",
+   "portfolio": {
+    "current": 0.37019003247434257,
+    "path_1": 0.3697212581934588,
+    "path_2": 0.26008870933219835
+   },
+   "stats": [
+    {
+     "id": "current",
+     "status": "clear",
+     "mean": 0.493,
+     "novelty": 0.25,
+     "niche": "direct",
+     "pBest": 0.32,
+     "ei": 0,
+     "checks": []
+    },
+    {
+     "id": "path_1",
+     "status": "clear",
+     "mean": 0.508,
+     "novelty": 0.62,
+     "niche": "reframe",
+     "pBest": 0.33,
+     "ei": 0.067,
+     "checks": []
+    },
+    {
+     "id": "path_2",
+     "status": "clear",
+     "mean": 0.477,
+     "novelty": 0.51,
+     "niche": "combine",
+     "pBest": 0.23,
+     "ei": 0.053,
+     "checks": []
+    },
+    {
+     "id": "path_3",
+     "status": "clear",
+     "mean": 0.437,
+     "novelty": 0.73,
+     "niche": "combine",
+     "pBest": 0.12,
+     "ei": 0.031,
+     "checks": []
+    }
+   ]
+  }
+ ]
+}

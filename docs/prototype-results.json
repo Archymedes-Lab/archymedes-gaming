@@ -1,0 +1,36 @@
+{
+ "ambiguity": {
+  "off": {
+   "wrongful": 108,
+   "rightful": 913,
+   "inquiries": 0,
+   "thefts": 1834
+  },
+  "on": {
+   "wrongful": 17,
+   "rightful": 712,
+   "inquiries": 1122,
+   "p95": 0.117
+  }
+ },
+ "contracts": {
+  "plain": {
+   "checks": 49170,
+   "mismatches": 0,
+   "offers": 4465,
+   "undercuts": 0,
+   "pledges": 402,
+   "keeperMean": 22.35,
+   "breakerMean": 1.83
+  },
+  "adversarial": {
+   "checks": 49170,
+   "mismatches": 0,
+   "offers": 4109,
+   "undercuts": 0,
+   "pledges": 388,
+   "keeperMean": 21.47,
+   "breakerMean": 3.03
+  }
+ }
+}

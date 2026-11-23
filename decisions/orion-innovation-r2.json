@@ -1,0 +1,237 @@
+{
+ "runAt": "2026-10-25T22:10:01.755Z",
+ "factors": [
+  {
+   "id": "adopt",
+   "label": "Studios adopt it within 12 months",
+   "weight": 0.2
+  },
+  {
+   "id": "reliable",
+   "label": "Makes NPCs measurably more reliable",
+   "weight": 0.16
+  },
+  {
+   "id": "moat",
+   "label": "Hard for Inworld/Convai/ACE to copy",
+   "weight": 0.16
+  },
+  {
+   "id": "player",
+   "label": "Players notice and value it",
+   "weight": 0.14
+  },
+  {
+   "id": "dropin",
+   "label": "Drops into existing NPC systems",
+   "weight": 0.12
+  },
+  {
+   "id": "build",
+   "label": "Small team can prototype it in weeks",
+   "weight": 0.12
+  },
+  {
+   "id": "cheap",
+   "label": "Low runtime cost and latency",
+   "weight": 0.1
+  }
+ ],
+ "options": [
+  {
+   "id": "hearsay",
+   "label": "Epistemic NPCs: rumours spread with provenance chains and trust; hearsay never justifies irreversible acts"
+  },
+  {
+   "id": "irrev",
+   "label": "Evidence thresholds scale with action irreversibility; uncertain NPCs probe (ask, check) before acting"
+  },
+  {
+   "id": "diff",
+   "label": "Behaviour diffs: replay recorded sessions against a changed config/model and show which decisions changed and why"
+  },
+  {
+   "id": "pcc",
+   "label": "Proof-carrying actions: any third-party AI runtime submits actions with a certificate the engine checks cheaply"
+  },
+  {
+   "id": "promises",
+   "label": "Commitments as contracts: NPC and player promises tracked as obligations verified against engine state"
+  },
+  {
+   "id": "consensus",
+   "label": "World-consistent cast: no two NPCs ever assert contradictory facts about authoritative state"
+  }
+ ],
+ "runs": [
+  {
+   "ask": "DECISION: What is the next real innovation for this layer: a new mechanism (not a feature) that no competitor implements, that makes AI NPCs feel alive while staying safe to ship?",
+   "judge": "typesafe",
+   "divergeFailed": true,
+   "paths": [],
+   "commit": "irrev",
+   "innovation": "promises",
+   "portfolio": {
+    "current": 0.38230007440324454,
+    "irrev": 0.6176999255967551
+   },
+   "stats": [
+    {
+     "id": "current",
+     "status": "clear",
+     "mean": 0.492,
+     "novelty": 0.53,
+     "niche": "direct",
+     "pBest": 0.09,
+     "ei": 0,
+     "checks": []
+    },
+    {
+     "id": "hearsay",
+     "status": "clear",
+     "mean": 0.504,
+     "novelty": 0.46,
+     "niche": "direct",
+     "pBest": 0.12,
+     "ei": 0.068,
+     "checks": []
+    },
+    {
+     "id": "irrev",
+     "status": "clear",
+     "mean": 0.562,
+     "novelty": 0.53,
+     "niche": "direct",
+     "pBest": 0.25,
+     "ei": 0.105,
+     "checks": []
+    },
+    {
+     "id": "diff",
+     "status": "clear",
+     "mean": 0.516,
+     "novelty": 0.66,
+     "niche": "direct",
+     "pBest": 0.14,
+     "ei": 0.076,
+     "checks": []
+    },
+    {
+     "id": "pcc",
+     "status": "clear",
+     "mean": 0.461,
+     "novelty": 0.6,
+     "niche": "direct",
+     "pBest": 0.06,
+     "ei": 0.046,
+     "checks": []
+    },
+    {
+     "id": "promises",
+     "status": "clear",
+     "mean": 0.55,
+     "novelty": 0.55,
+     "niche": "direct",
+     "pBest": 0.22,
+     "ei": 0.097,
+     "checks": []
+    },
+    {
+     "id": "consensus",
+     "status": "clear",
+     "mean": 0.492,
+     "novelty": 0.42,
+     "niche": "direct",
+     "pBest": 0.1,
+     "ei": 0.063,
+     "checks": []
+    }
+   ]
+  },
+  {
+   "ask": "DECISION: What unconventional capability would make studios and players say 'NPCs have never done this before', built on the reliability guarantees already in place?",
+   "judge": "typesafe",
+   "divergeFailed": true,
+   "paths": [],
+   "commit": "promises",
+   "innovation": "diff",
+   "portfolio": {
+    "current": 0.2537986961006853,
+    "pcc": 0.18860352631922658,
+    "promises": 0.5575977775800884
+   },
+   "stats": [
+    {
+     "id": "current",
+     "status": "clear",
+     "mean": 0.488,
+     "novelty": 0.48,
+     "niche": "direct",
+     "pBest": 0.04,
+     "ei": 0,
+     "checks": []
+    },
+    {
+     "id": "hearsay",
+     "status": "clear",
+     "mean": 0.57,
+     "novelty": 0.31,
+     "niche": "direct",
+     "pBest": 0.19,
+     "ei": 0.113,
+     "checks": []
+    },
+    {
+     "id": "irrev",
+     "status": "clear",
+     "mean": 0.579,
+     "novelty": 0.41,
+     "niche": "direct",
+     "pBest": 0.2,
+     "ei": 0.119,
+     "checks": []
+    },
+    {
+     "id": "diff",
+     "status": "clear",
+     "mean": 0.533,
+     "novelty": 0.68,
+     "niche": "direct",
+     "pBest": 0.11,
+     "ei": 0.088,
+     "checks": []
+    },
+    {
+     "id": "pcc",
+     "status": "clear",
+     "mean": 0.475,
+     "novelty": 0.63,
+     "niche": "borrow",
+     "pBest": 0.05,
+     "ei": 0.054,
+     "checks": []
+    },
+    {
+     "id": "promises",
+     "status": "clear",
+     "mean": 0.581,
+     "novelty": 0.51,
+     "niche": "direct",
+     "pBest": 0.22,
+     "ei": 0.121,
+     "checks": []
+    },
+    {
+     "id": "consensus",
+     "status": "clear",
+     "mean": 0.56,
+     "novelty": 0.34,
+     "niche": "direct",
+     "pBest": 0.17,
+     "ei": 0.107,
+     "checks": []
+    }
+   ]
+  }
+ ]
+}

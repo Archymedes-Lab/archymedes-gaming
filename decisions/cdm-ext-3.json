@@ -1,0 +1,551 @@
+{
+ "commit": "irrev",
+ "innovation": "promises",
+ "portfolio": {
+  "current": 0.5847170342562056,
+  "irrev": 0.16230566535402066,
+  "diff": 0.11984827621162467,
+  "promises": 0.13312902417814965
+ },
+ "evpi": 0.07868967617429268,
+ "escalate": [
+  "current",
+  "irrev"
+ ],
+ "stats": [
+  {
+   "id": "irrev",
+   "text": "On top of the current layer: Evidence thresholds scale with action irreversibility; uncertain NPCs probe (ask, check) before acting",
+   "mean": 0.4977389555406112,
+   "cvar": 0.3079025899283387,
+   "novelty": 0.3198450148325006,
+   "fail": 0.7213513256470712,
+   "p_best": 0.1421892964845708,
+   "ei": 0.03503624143903551,
+   "status": "verify",
+   "niche": "safety",
+   "checks": [
+    "deceptive",
+    "mechanism"
+   ],
+   "learning": 0.2082929832486382,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.8304940865845093
+    ],
+    "truth": [
+     "eventlog",
+     0.5244310179125315
+    ],
+    "knowledge": [
+     "witness",
+     0.5205763730694877
+    ],
+    "act": [
+     "validated",
+     0.776743222161469
+    ],
+    "decide": [
+     "tiered",
+     0.4238568676248324
+    ],
+    "assure": [
+     "invariants",
+     0.4703646128194099
+    ]
+   }
+  },
+  {
+   "id": "promises",
+   "text": "On top of the current layer: Commitments as contracts: NPC and player promises tracked as obligations verified against engine state",
+   "mean": 0.495458321563673,
+   "cvar": 0.3044040073924041,
+   "novelty": 0.35565307779253175,
+   "fail": 0.7770762788273777,
+   "p_best": 0.11793680454861129,
+   "ei": 0.02994104323956872,
+   "status": "verify",
+   "niche": "social",
+   "checks": [
+    "deceptive",
+    "mechanism"
+   ],
+   "learning": 0.22968932280233384,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.6341128380230516
+    ],
+    "truth": [
+     "eventlog",
+     0.699352673300547
+    ],
+    "knowledge": [
+     "omniscient",
+     0.35751759083084234
+    ],
+    "act": [
+     "validated",
+     0.6593598479916613
+    ],
+    "decide": [
+     "tiered",
+     0.544797255335999
+    ],
+    "assure": [
+     "invariants",
+     0.6485737312814368
+    ]
+   }
+  },
+  {
+   "id": "hearsay",
+   "text": "On top of the current layer: Epistemic NPCs: rumours spread with provenance chains and trust; hearsay never justifies irreversible acts",
+   "mean": 0.495210776007759,
+   "cvar": 0.30618076162042274,
+   "novelty": 0.29681311363743557,
+   "fail": 0.7335109790424559,
+   "p_best": 0.13173980760532647,
+   "ei": 0.032751181409873535,
+   "status": "verify",
+   "niche": "social",
+   "checks": [
+    "deceptive",
+    "mechanism"
+   ],
+   "learning": 0.22001557347413497,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.5793019593616708
+    ],
+    "truth": [
+     "eventlog",
+     0.7285416008238011
+    ],
+    "knowledge": [
+     "new",
+     0.7849875517988906
+    ],
+    "act": [
+     "validated",
+     0.8143372834530348
+    ],
+    "decide": [
+     "tiered",
+     0.7556664017714336
+    ],
+    "assure": [
+     "invariants",
+     0.7164215787350384
+    ]
+   }
+  },
+  {
+   "id": "consensus",
+   "text": "On top of the current layer: World-consistent cast: no two NPCs ever assert contradictory facts about authoritative state",
+   "mean": 0.48197162578320146,
+   "cvar": 0.2962718164700312,
+   "novelty": 0.23660838305400092,
+   "fail": 0.8568271260568063,
+   "p_best": 0.0,
+   "ei": 0.016068007324294305,
+   "status": "reject",
+   "niche": "social",
+   "checks": [],
+   "learning": 0.2589901883114554,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.8438896674620265
+    ],
+    "truth": [
+     "eventlog",
+     0.7800681634452263
+    ],
+    "knowledge": [
+     "omniscient",
+     0.29387795236493086
+    ],
+    "act": [
+     "validated",
+     0.7490920002354141
+    ],
+    "decide": [
+     "tiered",
+     0.6268605223727715
+    ],
+    "assure": [
+     "invariants",
+     0.7172344304842503
+    ]
+   }
+  },
+  {
+   "id": "diff",
+   "text": "On top of the current layer: Behaviour diffs: replay recorded sessions against a changed config/model and show which decisions changed and why",
+   "mean": 0.4786542823297335,
+   "cvar": 0.29920047980703113,
+   "novelty": 0.41797678402728267,
+   "fail": 0.7122511968298599,
+   "p_best": 0.09941235511729415,
+   "ei": 0.023644673496213464,
+   "status": "verify",
+   "niche": "tooling",
+   "checks": [
+    "mechanism"
+   ],
+   "learning": 0.22362978603518593,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.4694717635460138
+    ],
+    "truth": [
+     "eventlog",
+     0.46397434428565176
+    ],
+    "knowledge": [
+     "new",
+     0.4739593770520215
+    ],
+    "act": [
+     "validated",
+     0.5262478640184911
+    ],
+    "decide": [
+     "tiered",
+     0.6045248847783611
+    ],
+    "assure": [
+     "new",
+     0.3608215075856782
+    ]
+   }
+  },
+  {
+   "id": "orion1_1",
+   "text": "On top of the current layer: Implement runtime narrative causality graph. Build a live graph where NPC actions must satisfy causal preconditions from recent events, not just static facts. This forces logical continuity that memory-onl",
+   "mean": 0.4762270118842372,
+   "cvar": 0.2945880223729716,
+   "novelty": 0.4577136019489989,
+   "fail": 0.9114666516794988,
+   "p_best": 0.0,
+   "ei": 0.008081695730000305,
+   "status": "reject",
+   "niche": "safety",
+   "checks": [],
+   "learning": 0.3374972224177639,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.5627177888747177
+    ],
+    "truth": [
+     "new",
+     0.4660757724965371
+    ],
+    "knowledge": [
+     "new",
+     0.31434489294124013
+    ],
+    "act": [
+     "validated",
+     0.6178438563973531
+    ],
+    "decide": [
+     "new",
+     0.4930753293333783
+    ],
+    "assure": [
+     "invariants",
+     0.5593642320853155
+    ]
+   }
+  },
+  {
+   "id": "current",
+   "text": "Keep the current Reliability Layer (evidence-linked memory, event-log reconciliation, validated action API, tiered runtime, invariant tests) and polish integrations.",
+   "mean": 0.4732691539440986,
+   "cvar": 0.29139320793315476,
+   "novelty": 0.0,
+   "fail": 0.0,
+   "p_best": 0.4504028130700408,
+   "ei": 0.0,
+   "status": "clear",
+   "niche": "integration",
+   "checks": [],
+   "learning": 0.0,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.9209698896731789
+    ],
+    "truth": [
+     "eventlog",
+     0.8795393931734609
+    ],
+    "knowledge": [
+     "witness",
+     0.5040740217553416
+    ],
+    "act": [
+     "validated",
+     0.9247862904097248
+    ],
+    "decide": [
+     "tiered",
+     0.9173525759720078
+    ],
+    "assure": [
+     "invariants",
+     0.8705309328194027
+    ]
+   }
+  },
+  {
+   "id": "orion2_2",
+   "text": "On top of the current layer: Integrate with existing game telemetry pipelines. Instead of a new middleware, hook into standard Unity/Unreal analytics. Use existing event streams to validate NPC actions against real-time player data, reduci",
+   "mean": 0.4726091865030893,
+   "cvar": 0.29072682406278455,
+   "novelty": 0.4149310146847842,
+   "fail": 0.9926617868859579,
+   "p_best": 0.0,
+   "ei": 0.0002540131036903016,
+   "status": "reject",
+   "niche": "integration",
+   "checks": [],
+   "learning": 0.3489451437144703,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.7319290702145637
+    ],
+    "truth": [
+     "new",
+     0.47830783599076726
+    ],
+    "knowledge": [
+     "omniscient",
+     0.7362238629459962
+    ],
+    "act": [
+     "validated",
+     0.6296206606112249
+    ],
+    "decide": [
+     "tiered",
+     0.5885317597487472
+    ],
+    "assure": [
+     "playtest",
+     0.5387953976906125
+    ]
+   }
+  },
+  {
+   "id": "orion2_3",
+   "text": "On top of the current layer: Create a 'Reliability Score' leaderboard for game mods. Allow modders to publish their NPC behaviors with a public reliability score generated by the layer. Gamify trust: mods with 100% evidence resolution rank highe",
+   "mean": 0.4715039937028824,
+   "cvar": 0.2885547486688035,
+   "novelty": 0.36113732985410596,
+   "fail": 0.9878658415641047,
+   "p_best": 0.0,
+   "ei": 0.00025957331203460007,
+   "status": "reject",
+   "niche": "tooling",
+   "checks": [],
+   "learning": 0.32073682808408954,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.6198120874184814
+    ],
+    "truth": [
+     "eventlog",
+     0.48819823319641326
+    ],
+    "knowledge": [
+     "new",
+     0.375909999854463
+    ],
+    "act": [
+     "validated",
+     0.5143425401667517
+    ],
+    "decide": [
+     "new",
+     0.43413914090501304
+    ],
+    "assure": [
+     "invariants",
+     0.43568635138553674
+    ]
+   }
+  },
+  {
+   "id": "pcc",
+   "text": "On top of the current layer: Proof-carrying actions: any third-party AI runtime submits actions with a certificate the engine checks cheaply",
+   "mean": 0.46881856935360033,
+   "cvar": 0.28680632775903425,
+   "novelty": 0.38857932873389955,
+   "fail": 0.9531641478494569,
+   "p_best": 0.0,
+   "ei": 0.0015953916299362777,
+   "status": "reject",
+   "niche": "integration",
+   "checks": [],
+   "learning": 0.34284211338316595,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.5957308169373956
+    ],
+    "truth": [
+     "eventlog",
+     0.4791130125227457
+    ],
+    "knowledge": [
+     "new",
+     0.4309853447442317
+    ],
+    "act": [
+     "validated",
+     0.8061758119222997
+    ],
+    "decide": [
+     "tiered",
+     0.42339829372275356
+    ],
+    "assure": [
+     "new",
+     0.4664852043506617
+    ]
+   }
+  },
+  {
+   "id": "orion1_3",
+   "text": "On top of the current layer: Release open-source invariant test suite. Publish the property-based invariant tests as a standalone tool. Studios adopt the tests first, creating demand for the middleware that passes them.",
+   "mean": 0.46821692393705344,
+   "cvar": 0.28852769800092076,
+   "novelty": 0.32217236691843537,
+   "fail": 0.8621103133084885,
+   "p_best": 0.0,
+   "ei": 0.0076793594838019865,
+   "status": "reject",
+   "niche": "tooling",
+   "checks": [],
+   "learning": 0.2697872283194932,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.5789755126942279
+    ],
+    "truth": [
+     "eventlog",
+     0.5798543172561702
+    ],
+    "knowledge": [
+     "new",
+     0.43158941937725165
+    ],
+    "act": [
+     "validated",
+     0.7304648630267881
+    ],
+    "decide": [
+     "tiered",
+     0.4632430769884774
+    ],
+    "assure": [
+     "invariants",
+     0.9338638303837555
+    ]
+   }
+  },
+  {
+   "id": "orion2_1",
+   "text": "On top of the current layer: Ship a public 'Hallucination Audit' API for studios. Expose a read-only endpoint that logs every NPC action with its evidence chain. Studios can query why an NPC acted, proving reliability to players and QA teams",
+   "mean": 0.4660412533661328,
+   "cvar": 0.2881708717774407,
+   "novelty": 0.25484530292595475,
+   "fail": 0.7557193940347409,
+   "p_best": 0.058318923174156594,
+   "ei": 0.014381583580161726,
+   "status": "verify",
+   "niche": "tooling",
+   "checks": [
+    "deceptive",
+    "mechanism"
+   ],
+   "learning": 0.21445653827478928,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.8331653583540807
+    ],
+    "truth": [
+     "eventlog",
+     0.5432230682242141
+    ],
+    "knowledge": [
+     "witness",
+     0.5164298595062837
+    ],
+    "act": [
+     "validated",
+     0.5682201088068662
+    ],
+    "decide": [
+     "tiered",
+     0.603304937718378
+    ],
+    "assure": [
+     "playtest",
+     0.6675021318242758
+    ]
+   }
+  },
+  {
+   "id": "orion1_2",
+   "text": "On top of the current layer: Partner with one indie studio for closed beta. Embed with a small studio to co-design the reliability layer against their specific gameplay loops. Their feedback validates the mechanism before scaling.",
+   "mean": 0.44865624197805926,
+   "cvar": 0.25917663229164795,
+   "novelty": 0.3551155551550777,
+   "fail": 0.7986606549562748,
+   "p_best": 0.0,
+   "ei": 0.005270007187770541,
+   "status": "reject",
+   "niche": "other",
+   "checks": [],
+   "learning": 0.24941921067539224,
+   "mechanism": {
+    "remember": [
+     "evidence",
+     0.5399906577466541
+    ],
+    "truth": [
+     "eventlog",
+     0.5110333099540034
+    ],
+    "knowledge": [
+     "new",
+     0.4554632610751772
+    ],
+    "act": [
+     "validated",
+     0.6239086640311956
+    ],
+    "decide": [
+     "tiered",
+     0.4651599259402144
+    ],
+    "assure": [
+     "playtest",
+     0.708714631258205
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+archymedes-gaming
+Copyright 2026 Archymedes
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Third-party assets in public/models are not covered by the Apache licence:
+- RobotExpressive.glb by Tomás Laulhé, CC0 1.0.
+- Soldier.glb, from the three.js examples (a Mixamo character). It keeps its original terms.
